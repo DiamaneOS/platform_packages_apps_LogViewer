@@ -150,7 +150,7 @@ public abstract class BaseActivity extends Activity {
             b.setText(R.string.action_report);
             b.setOnClickListener(v -> {
                 viewModel.copyToClipbord(this);
-                String url = "https://github.com/GrapheneOS/os-issue-tracker/issues";
+                String url = "https://github.com/DiamaneOS/issue-tracker/issues";
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
             });
             btnLayout.addView(b);
